@@ -48,7 +48,7 @@ def opening():
 
 def sort_result():
     format_list = opening()
-    sorted_data = sorted(format_list[1:], key=lambda x: x[-4], reverse=True)
+    sorted_data = sorted(format_list[1:], key=lambda x: x[-4], reverse=True) # key=lambda x: x[-4] файл сортируется от большего в к меньшему по [-4] элементу списка
     sorted_data.insert(0, format_list[0])
     return sorted_data
 
