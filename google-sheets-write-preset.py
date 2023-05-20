@@ -19,9 +19,9 @@ def get_service_sacc():
     creds_service = ServiceAccountCredentials.from_json_keyfile_name(creds_json, scopes).authorize(httplib2.Http())
     return build('sheets', 'v4', http=creds_service)
 
-
+# Вместо звезд поместите id таблицы. "https://docs.google.com/spreadsheets/d/ **тут будет ваш id** /edit#gid=354711398"
 sheet = get_service_sacc().spreadsheets()
-sheet_id = "1O9DPL0Ph5RcSk2rGCwfVdjr2QTOuLXSCF1zH-XcXyhY"
+sheet_id = "*************************"
 
 resp = sheet.values().update(
     spreadsheetId=sheet_id,
