@@ -1,9 +1,10 @@
 import os
 from collections import namedtuple
 
+# Вместо "****" нужно вставить имя файла
 def path():
     folder = os.path.dirname(__file__)
-    filename = 'Звіт_про_заробітки_15_05_2023_15_05_2023_Fleet.csv'
+    filename = '*************************'
     file_path = os.path.join(folder, filename)
     return file_path
 
@@ -17,7 +18,7 @@ def str_to_float(list):
             result.append(i)
     return result
 
-
+# Функция получает данные из файла в формате "Drivers_name ","2371.00","1026.00","1345.00","1778.25","1237.00","0.00","0.00","0.00","0.00","300.01","225.01","0.00","0.00","0.00"
 def opening():
     Driver = namedtuple('Driver', ['Водій',
                                 'Валовий_дохід', 
