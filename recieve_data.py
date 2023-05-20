@@ -52,7 +52,7 @@ def sort_result():
     sorted_data.insert(0, format_list[0])
     return sorted_data
 
-
+# Функция дает возможность выбрать нужные столбцы для вывода в Googele Sheets
 def main():
     compre = [[driver.Водій, driver.Дохід_на_годину_чистий, driver.Чайові, f'{driver.Дохід_на_годину_чистий+driver.Чайові}'] for driver in sort_result()]
     return compre
